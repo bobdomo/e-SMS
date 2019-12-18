@@ -5,6 +5,7 @@ $(function () {
     chart2();
     chart3();
     chart4();
+    chart5();
 
     // select all on checkbox click
     $("[data-checkboxes]").each(function () {
@@ -66,12 +67,12 @@ function chart1() {
             curve: "smooth"
         },
         series: [{
-            name: "High - 2019",
-            data: [5, 15, 14, 36, 32, 32]
+            name: "Activity - 2019",
+            data: [50, 150, 140, 360, 320, 302]
         },
         {
-            name: "Low - 2019",
-            data: [7, 11, 30, 18, 25, 13]
+            name: "Activity - 2018",
+            data: [70, 110, 300, 180, 250, 103]
         }
         ],
         grid: {
@@ -95,7 +96,7 @@ function chart1() {
         },
         yaxis: {
             title: {
-                text: "Income"
+                text: "Activity"
             },
             labels: {
                 style: {
@@ -103,7 +104,7 @@ function chart1() {
                 }
             },
             min: 5,
-            max: 40
+            max: 1000
         },
         legend: {
             position: "top",
@@ -149,18 +150,18 @@ function chart2() {
             },
         },
         series: [{
-            name: 'PRODUCT A',
+            name: 'Professional',
             data: [44, 55, 41, 67, 22, 43]
         }, {
-            name: 'PRODUCT B',
+            name: 'Skill',
             data: [13, 23, 20, 8, 13, 27]
         }, {
-            name: 'PRODUCT C',
+            name: 'Tunas',
             data: [11, 17, 15, 15, 21, 14]
         }],
         xaxis: {
             type: 'datetime',
-            categories: ['01/01/2019 GMT', '01/02/2019 GMT', '01/03/2019 GMT', '01/04/2019 GMT', '01/05/2019 GMT', '01/06/2019 GMT'],
+            categories: ['01/01/2019 GMT', '02/01/2019 GMT', '03/01/2019 GMT', '04/01/2019 GMT', '05/01/2019 GMT', '06/01/2019 GMT'],
             labels: {
                 style: {
                     colors: "#9aa0ac"
@@ -215,16 +216,16 @@ function chart3() {
             dashArray: [0, 8, 5]
         },
         series: [{
-            name: "Option 1",
-            data: [45, 52, 38, 24, 33, 26, 21, 20]
+            name: "Skill",
+            data: [45, 52, 38, 24, 33, 26, 21, 20, 33, 26, 21, 20]
         },
         {
-            name: "Option 2",
-            data: [35, 41, 62, 42, 13, 18, 29, 37]
+            name: "Tunas",
+            data: [35, 41, 62, 42, 13, 18, 29, 37, 13, 18, 29, 37]
         },
         {
-            name: 'Option 3',
-            data: [87, 57, 74, 99, 75, 38, 62, 47]
+            name: 'Professional',
+            data: [100, 57, 74, 99, 75, 38, 62, 47, 75, 38, 62, 47]
         }
         ],
         legend: {
@@ -238,7 +239,7 @@ function chart3() {
             }
         },
         xaxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug'
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'
             ],
             labels: {
                 style: {
@@ -293,16 +294,16 @@ function chart4() {
         },
         series: [{
             name: 'series1',
-            data: [31, 40, 28, 51, 22, 64, 80]
+            data: [31, 40, 28, 51, 22, 64, 80, 22, 64, 80]
         }, {
             name: 'series2',
-            data: [11, 32, 67, 32, 44, 52, 41]
+            data: [11, 32, 67, 32, 44, 52, 41, 44, 52, 41]
         }],
         legend: {
             show: false,
         },
         xaxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July'],
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
             labels: {
                 style: {
                     colors: "#9aa0ac"
@@ -326,3 +327,35 @@ function chart4() {
     chart.render();
 
 }
+//try new chart
+function chart5() {
+  var options = {
+            chart: {
+                height: 250,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            series: [{
+                data: [70, 55, 87]
+            }],
+            xaxis: {
+                categories: ['Tunas', 'Skill', 'Professional'],
+            }
+
+        }
+
+       var chart = new ApexCharts(
+            document.querySelector("#chart5"),
+            options
+        );
+
+        chart.render();
+}
+//end try new chart
