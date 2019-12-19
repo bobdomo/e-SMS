@@ -395,16 +395,35 @@
                   <div class="card-body">
                     <div class="form-group">
                       <label>Select Program</label>
-                      <select class="form-control">
+                      <select id="program" onchange=updatecourse() class="form-control">
                         <option></option>
-                        <option>Peneraju Tunas</option>
-                        <option>Peneraju Skill</option>
-                        <option>Peneraju Profesional</option>
+                        <option value="tunas">Peneraju Tunas</option>
+                        <option value="skill">Peneraju Skill</option>
+                        <option value="profesional">Peneraju Profesional</option>
                       </select>
                     </div>
+
+                    <script>
+                    function updatecourse(){
+                      var programname = "";
+                       programname = $('#program').val();
+                      console.log(programname);
+
+                      if (programname == "tunas"){
+                        $("#mycourse").empty();
+                        var htmltunas = "<option></option>"
+                      }
+                      else if (programname == "skill"){
+                        // console.log(programname);
+                      }
+                      else if(programname == "profesional"){
+                      }
+                    }
+                    </script>
+
                     <div class="form-group">
                       <label>Select Course</label>
-                      <select class="form-control">
+                      <select id="mycourse" class="form-control">
                         <option></option>
                         <option></option>
                         <option></option>
