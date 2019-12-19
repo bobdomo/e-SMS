@@ -411,12 +411,27 @@
 
                       if (programname == "tunas"){
                         $("#mycourse").empty();
-                        var htmltunas = "<option></option>"
+                        var htmltunas = "<option></option>" +
+                        "<option>Tunas Geliga</option>"+
+                        "<option>Tunas Padu</option>";
+                        $("#mycourse").append(htmltunas);
+
                       }
                       else if (programname == "skill"){
+                        $("#mycourse").empty();
+                        var htmlskill = "<option></option>" +
+                        "<option>Skill 1</option>"+
+                        "<option>Skill 2</option>";
+                        $("#mycourse").append(htmlskill);
                         // console.log(programname);
                       }
                       else if(programname == "profesional"){
+                        $("#mycourse").empty();
+                        var htmlprofesional = "<option></option>" +
+                        "<option>Profesional 1</option>"+
+                        "<option>Profesional 2</option>";
+                        $("#mycourse").append(htmlprofesional);
+
                       }
                     }
                     </script>
