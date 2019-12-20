@@ -383,6 +383,8 @@
         </aside>
       </div>
       <!-- Main Content -->
+
+
       <div class="main-content">
         <section class="section">
           <div class="section-body">
@@ -417,8 +419,11 @@
                       </fieldset>
                       <h3>IC Validation</h3>
                       <fieldset>
-                        <h6>Please uploaad your IC for validation purpose</h6>
-                        <input type="file" style="width:200px">
+                        <h6>Please upload your IC for validation purpose</h6>
+                        <input type="file" id="image-selector" accept="image/*;capture=camera"></p>
+                        <img src="" id="selected-image" width="200px" />
+                        <div id="status"></style></div>
+                        <h4 id="prediction-result" ></h4>
                       </fieldset>
                       <h3>Terms &amp; Conditions - Register</h3>
                       <fieldset>
@@ -601,7 +606,26 @@ contact@lorem-ipsum.info</p>
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+
+
 </body>
+<script src="./ic/docs/index.js"></script>
+<!-- ic validation -->
+<script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#selected-image-tag').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#selected-image").change(function(){
+        readURL(this);
+    });
+</script>
 
 
 <!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:10:35 GMT -->

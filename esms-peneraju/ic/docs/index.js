@@ -47,7 +47,7 @@ async function predict(image) {
     });
 
     showResult(logits);
-    
+
     const totalTime = performance.now() - startTime;
     status(`Done in ${Math.floor(totalTime)}ms.`);
 }
