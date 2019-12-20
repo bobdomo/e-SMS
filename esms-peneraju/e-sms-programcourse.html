@@ -413,23 +413,23 @@
                         $("#mycourse").empty();
                         var htmltunas = "<option></option>" +
                         "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php'>Tunas Geliga</option>"+
-                        "<option>Tunas Padu</option>";
+                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tunaspotensi.php'>Tunas Potensi</option>";
                         $("#mycourse").append(htmltunas);
 
                       }
                       else if (programname == "skill"){
                         $("#mycourse").empty();
                         var htmlskill = "<option></option>" +
-                        "<option>Skill 1</option>"+
-                        "<option>Skill 2</option>";
+                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/pipeinsulation.php'>Pipe Insulation</option>"+
+                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tvet.php'>Dana TVET</option>";
                         $("#mycourse").append(htmlskill);
                         // console.log(programname);
                       }
                       else if(programname == "profesional"){
                         $("#mycourse").empty();
                         var htmlprofesional = "<option></option>" +
-                        "<option>Profesional 1</option>"+
-                        "<option>Profesional 2</option>";
+                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/acca.php'>ACCA</option>"+
+                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/bda.php'>Big Data Analytics</option>";
                         $("#mycourse").append(htmlprofesional);
 
                       }
@@ -441,7 +441,7 @@
 
                       // append value on source
                       document.getElementById("myframe").src = link
-                      ;  
+                      ;
 
                     }
                     </script>
