@@ -67,16 +67,18 @@
 
                 <script>
                 function login(){
-                  alert("ayam");
+                  // alert("ayam");
                   var username = $("#email").val();
                   var password = $("#password").val();
                   console.log(username);
                   console.log(password);
 
                   if (username == "administrator@gmail.com" && password =="admin123"){
-                    window.location.href= "www.google.com";
+                    window.location.href= "http://localhost/e-SMS/esms-peneraju/eSMS-form_management.html";
+                  }else if(username == "abu@yp.com.my"){
+                    window.location.href= "http://localhost/e-SMS/esms-peneraju/esms-dashboard.html";
                   }else{
-                    window.location.href ="https://web.whatsapp.com/";
+                    window.location.href ="http://localhost/e-SMS/esms-peneraju/esms-register.html";
                   }
 
                 }
