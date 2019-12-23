@@ -2,15 +2,16 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/basic-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:09:58 GMT -->
+<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:09:58 GMT -->
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Otika - Admin Dashboard Template</title>
+  <title>e-SMS Application Form</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/bundles/pretty-checkbox/pretty-checkbox.min.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -183,13 +184,10 @@
           <ul class="sidebar-menu">
             <li class="menu-header">Main</li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown">
-                <i data-feather="briefcase"></i>
-                <span>Student</span>
-              </a>
+              <a href="eSMS-admin.html" class="menu-toggle nav-link has-dropdown toggled"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg><span>Admin</span></a>
               <ul class="dropdown-menu" style="display: block;">
-                <li class="dropdown active"><a class="nav-link" href="e-sms-programcourse.html">Scholar Application</a></li>
-                <li><a class="nav-link" href="eSMS-applicationform.html">Profile</a></li>
+                <li class="dropdown active"><a href="eSMS-form_management.html">Form Management</a></li>
+
               </ul>
             </li>
           </ul>
@@ -199,115 +197,131 @@
       <div class="main-content">
         <section class="section">
           <div class="section-body">
-            <div class="row">
-              <div class="col-6 col-md-6 col-lg-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Peneraju Program & Course Selection</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label>Select Program</label>
-                      <select id="program" onchange=updatecourse() class="form-control">
-                        <option></option>
-                        <option value="tunas">Peneraju Tunas</option>
-                        <option value="skill">Peneraju Skill</option>
-                        <option value="profesional">Peneraju Profesional</option>
-                      </select>
+            <div class="card">
+              <div class="card-header">
+                <h4>Form Management</h4>
+                <div class="card-header-form">
+                  <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-btn">
+                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                      </div>
                     </div>
-
-                    <script>
-                    function updatecourse(){
-                      var programname = "";
-                       programname = $('#program').val();
-                      console.log(programname);
-
-                      if (programname == "tunas"){
-                        $("#mycourse").empty();
-                        var htmltunas = "<option></option>" +
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php'>Tunas Geliga</option>"+
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tunaspotensi.php'>Tunas Potensi</option>";
-                        $("#mycourse").append(htmltunas);
-
-                      }
-                      else if (programname == "skill"){
-                        $("#mycourse").empty();
-                        var htmlskill = "<option></option>" +
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/pipeinsulation.php'>Pipe Insulation</option>"+
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tvet.php'>Dana TVET</option>";
-                        $("#mycourse").append(htmlskill);
-                        // console.log(programname);
-                      }
-                      else if(programname == "profesional"){
-                        $("#mycourse").empty();
-                        var htmlprofesional = "<option></option>" +
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/acca.php'>ACCA</option>"+
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/bda.php'>Big Data Analytics</option>";
-                        $("#mycourse").append(htmlprofesional);
-
-                      }
-                    }
-
-                    function updatelink(){
-                      var link = $("#mycourse").val();
-                      console.log(link);
-
-                      // append value on source
-                      document.getElementById("myframe").src = link
-                      ;
-
-                    }
-                    </script>
-
-                    <div class="form-group">
-                      <label>Select Course</label>
-                      <select id="mycourse" onchange=updatelink() class="form-control">
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                      </select>
-                    </div>
-                  </div>
+                  </form>
                 </div>
-
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Application Form</h4>
-                  </div>
-                  <div class="card-body">
-                    <!-- <style>
-                    body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-                    .first-row {position: absolute;top: 0; left: 0; right: 0; height: 100px;}
-                    .second-row {position: absolute; top: 100px; left: 0; right: 0; bottom: 0;}
-                    .second-row iframe {display: block; width: 100%; height: 100%; border: none;}
-                    </style> -->
-
-                    <!-- <iframe src="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php">
-                      <p>Your browser does not support iframes.</p>
-                    </iframe> -->
-
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/acca.php -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/bda.php -->
-                    <!-- skill -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tvet.php -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/pipeinsulation.php -->
-                    <!-- tunas -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tunaspotensi.php -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php -->
-
-                    <!-- i-frame placed here -->
-                    <iframe id="myframe" style="border:none;" height="500px" width="100%"  name="iframe_a"></iframe>
-
-                    <p><target="iframe_a"></a></p>
-
-                  </div>
-                </div>
-
               </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-md">
+                    <tr>
+                      <th>Program</th>
+                      <th>Course</th>
+                      <th>Created At</th>
+                      <th>Form Link</th>
+                      <th>Enable/Disable</th>
+                      <th>Status</th>
+                      <th><a href="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/admin/add_form.php" class="btn btn-icon btn-success">+</a></th>
+                    </tr>
+                    <tr>
+                      <td>Peneraju Tunas</td>
+                      <td>Tunas Geliga</td>
+                      <td>2017-01-09</td>
+                      <td><a href="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php">Peneraju Tunas Geliga</a></td>
+                      <td><div class="pretty p-switch">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                          <label></label>
+                        </div>
+                      </div></td>
+                      <td>
+                        <div class="badge badge-success">Active</div>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-icon btn-danger">x</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Peneraju Tunas</td>
+                      <td>Tunas Potensi</td>
+                      <td>2017-01-09</td>
+                      <td><a href="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tunaspotensi.php">Peneraju Tunas Potensi</a></td>
+                      <td><div class="pretty p-switch">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                          <label></label>
+                        </div>
+                      </div></td>
+                      <td>
+                        <div class="badge badge-danger">Disabled</div>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-icon btn-danger">x</a>
+                      </td>
+                    </tr>
 
+                    <tr>
+                      <td>Peneraju Skill</td>
+                      <td>Pipe Insulation</td>
+                      <td>2017-01-09</td>
+                      <td><a href="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/pipeinsulation.php">Peneraju Skill Pipe Insulation</a></td>
+                      <td><div class="pretty p-switch">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                          <label></label>
+                        </div>
+                      </div></td>
+                      <td>
+                        <div class="badge badge-success">Enabled</div>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-icon btn-danger">x</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Peneraju Skill</td>
+                      <td>Dana TVET</td>
+                      <td>2017-01-09</td>
+                      <td><a href="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tvet.php">Peneraju Skill Dana TVET</a></td>
+                      <td><div class="pretty p-switch">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                          <label></label>
+                        </div>
+                      </div></td>
+                      <td>
+                        <div class="badge badge-success">Enabled</div>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-icon btn-danger">x</a>
+                      </td>
+                    </tr>
+
+
+
+                  </table>
+                </div>
+              </div>
+              <div class="card-footer text-right">
+                <nav class="d-inline-block">
+                  <ul class="pagination mb-0">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1 <span
+                          class="sr-only">(current)</span></a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-          </div>
         </section>
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -421,5 +435,5 @@
 </body>
 
 
-<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/basic-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:09:58 GMT -->
+<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:09:58 GMT -->
 </html>
