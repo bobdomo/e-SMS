@@ -2,13 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/basic-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:09:58 GMT -->
+<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:06:35 GMT -->
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Scholar Application Form</title>
+  <title>Scholar's Profile</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -181,16 +185,11 @@
             </a>
           </div>
           <ul class="sidebar-menu">
-            <li class="menu-header">Main</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Student</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="e-sms-programcourse.html">Scholar Application</a></li>
-                <li><a class="nav-link" href="eSMS-applicationform.html">Profile</a></li>
-              </ul>
+            <li class="menu-header">Main Menu</li>
+            <li class="dropdown active">
+              <a href="eSMS-staff.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+              <li><a class="nav-link" href="eSMS-scholar-application.html">Application List</a></li>
             </li>
-
           </ul>
         </aside>
       </div>
@@ -198,114 +197,211 @@
       <div class="main-content">
         <section class="section">
           <div class="section-body">
-            <div class="row">
-              <div class="col-6 col-md-6 col-lg-12">
+            <div class="row mt-sm-4">
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="card author-box">
+                  <div class="card-body">
+                    <div class="author-box-center">
+                      <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle author-box-picture">
+                      <div class="clearfix"></div>
+                      <div class="author-box-name">
+                        <a href="#">Ammer Faisal Adanan</a>
+                      </div>
+                      <div class="author-box-job">Project Manager at Innovation Associates Consulting Sdn Bhd</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="author-box-description">
+                        <p>
+                          A committed person looking for suitable training to improve while contributing to the company to the utmost ability.
+                        </p>
+                      </div>
+                      <div class="mb-2 mt-3">
+                        <div class="text-small font-weight-bold">Ameer's Documents</div>
+                      </div>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-facebook" data-toggle="tooltip" data-placement="bottom" title="View documents.">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-instagram" data-toggle="tooltip" data-placement="bottom" title="IC verification result.">
+                        <i class="far fa-id-card"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-twitter"  data-toggle="tooltip" data-placement="bottom" title="Download all documents.">
+                        <i class="fas fa-file-download"></i>
+                      </a>
+                      <div class="w-100 d-sm-none"></div>
+                    </div>
+                  </div>
+                </div>
                 <div class="card">
                   <div class="card-header">
-                    <h4>Peneraju Program & Course Selection</h4>
+                    <h4>Personal Details</h4>
                   </div>
                   <div class="card-body">
-                    <div class="form-group">
-                      <label>Select Program</label>
-                      <select id="program" onchange=updatecourse() class="form-control">
-                        <option></option>
-                        <option value="tunas">Peneraju Tunas</option>
-                        <option value="skill">Peneraju Skill</option>
-                        <option value="profesional">Peneraju Profesional</option>
-                      </select>
-                    </div>
-
-                    <script>
-                    function updatecourse(){
-                      var programname = "";
-                       programname = $('#program').val();
-                      console.log(programname);
-
-                      if (programname == "tunas"){
-                        $("#mycourse").empty();
-                        var htmltunas = "<option></option>" +
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php'>Tunas Geliga</option>"+
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tunaspotensi.php'>Tunas Potensi</option>";
-                        $("#mycourse").append(htmltunas);
-
-                      }
-                      else if (programname == "skill"){
-                        $("#mycourse").empty();
-                        var htmlskill = "<option></option>" +
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/pipeinsulation.php'>Pipe Insulation</option>"+
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tvet.php'>Dana TVET</option>";
-                        $("#mycourse").append(htmlskill);
-                        // console.log(programname);
-                      }
-                      else if(programname == "profesional"){
-                        $("#mycourse").empty();
-                        var htmlprofesional = "<option></option>" +
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/acca.php'>ACCA</option>"+
-                        "<option value='http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/bda.php'>Big Data Analytics</option>";
-                        $("#mycourse").append(htmlprofesional);
-
-                      }
-                    }
-
-                    function updatelink(){
-                      var link = $("#mycourse").val();
-                      console.log(link);
-
-                      // append value on source
-                      document.getElementById("myframe").src = link
-                      ;
-
-                    }
-                    </script>
-
-                    <div class="form-group">
-                      <label>Select Course</label>
-                      <select id="mycourse" onchange=updatelink() class="form-control">
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                      </select>
+                    <div class="py-4">
+                      <p class="clearfix">
+                        <span class="float-left">
+                          IC Number
+                        </span>
+                        <span class="float-right text-muted">
+                          910211-03-1333
+                        </span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left">
+                          Phone
+                        </span>
+                        <span class="float-right text-muted">
+                          012-3456789
+                        </span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left">
+                          Mail
+                        </span>
+                        <span class="float-right text-muted">
+                          ameer91@gmail.com
+                        </span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left">
+                          Current Salary
+                        </span>
+                        <span class="float-right text-muted">
+                          RM 6,300.00
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
 
+
                 <div class="card">
                   <div class="card-header">
-                    <h4>Application Form</h4>
+                    <h4>Skills</h4>
                   </div>
                   <div class="card-body">
-                    <!-- <style>
-                    body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-                    .first-row {position: absolute;top: 0; left: 0; right: 0; height: 100px;}
-                    .second-row {position: absolute; top: 100px; left: 0; right: 0; bottom: 0;}
-                    .second-row iframe {display: block; width: 100%; height: 100%; border: none;}
-                    </style> -->
-
-                    <!-- <iframe src="http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php">
-                      <p>Your browser does not support iframes.</p>
-                    </iframe> -->
-
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/acca.php -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/bda.php -->
-                    <!-- skill -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tvet.php -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/pipeinsulation.php -->
-                    <!-- tunas -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/tunaspotensi.php -->
-                    <!-- http://localhost/e-sms/esms-peneraju/administrator/formtools/modules/form_builder/published/regtunasgeliga.php -->
-
-                    <!-- i-frame placed here -->
-                    <iframe id="myframe" style="border:none;" height="500px" width="100%"  name="iframe_a"></iframe>
-
-                    <p><target="iframe_a"></a></p>
-
+                    <ul class="list-unstyled user-progress list-unstyled-border list-unstyled-noborder">
+                      <li class="media">
+                        <div class="media-body">
+                          <div class="media-title">Project Management</div>
+                        </div>
+                        <div class="media-progressbar p-t-10">
+                          <div class="progress" data-height="6">
+                            <div class="progress-bar bg-green" data-width="70%"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-body">
+                          <div class="media-title">Microsoft Office</div>
+                        </div>
+                        <div class="media-progressbar p-t-10">
+                          <div class="progress" data-height="6">
+                            <div class="progress-bar bg-green" data-width="90%"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-body">
+                          <div class="media-title">Web Development</div>
+                        </div>
+                        <div class="media-progressbar p-t-10">
+                          <div class="progress" data-height="6">
+                            <div class="progress-bar bg-green" data-width="48%"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-body">
+                          <div class="media-title">Android Studio</div>
+                        </div>
+                        <div class="media-progressbar p-t-10">
+                          <div class="progress" data-height="6">
+                            <div class="progress-bar bg-green" data-width="73%"></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-
               </div>
+              <div class="col-12 col-md-12 col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                      <h4>About</h4>
+                    </div>
+                    <div class="tab-content tab-bordered" id="myTab3Content">
+                      <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
+                        <div class="row">
+                          <div class="col-md-3 col-6 b-r">
+                            <strong>Full Name</strong>
+                            <br>
+                            <p class="text-muted">Muhammad Ameer Faisal bin Adanan</p>
+                          </div>
+                          <div class="col-md-3 col-6 b-r">
+                            <strong>Mobile</strong>
+                            <br>
+                            <p class="text-muted">012-3456789</p>
+                          </div>
+                          <div class="col-md-3 col-6 b-r">
+                            <strong>Email</strong>
+                            <br>
+                            <p class="text-muted">ameer91@gmail.com</p>
+                          </div>
+                          <div class="col-md-3 col-6">
+                            <strong>Location</strong>
+                            <br>
+                            <p class="text-muted">Kodiang, Kedah</p>
+                          </div>
+                        </div>
+                        <p class="m-t-30">Completed my graduation in Computer Science - Artificial Intelligence from the well known and
+                          renowned institution
+                          of Melaka – Universiti Teknikal Malaysia Melaka in 2015-19. I ranked Top Student in University exams
+                          from the same
+                          university
+                          from 2015-19.</p>
+                        <p>Job training as software developer at Arvato Bertelsman System Malaysia. Implementing a php library called sentiment analysis to analyse the feedback form.
+                          from 2014-2015 </p>
+                        <p>Providing a Proof of Concept for a web sytem in the company. In charge in developing the basic AI algorithm for the POC.</p>
+                        <div class="section-title">Education</div>
+                        <ul>
+                          <li>SBPI Gombak (Aliran Sains Agama).</li>
+                          <li>Pusat Asasi Sains Universiti Malaya (Foundation in Physics and Computer Science).</li>
+                          <li>Universiti Teknikal Malaysia Melaka, (Bachelor in Computer Science, Major in Artificial Intelligent)</li>
+                        </ul>
+                        <div class="section-title">Experience</div>
+                        <ul>
+                          <li>Being a general worker that provide materials and manpower for others builders. Train to work fast and perfect. Withstand rough condition.</li>
+                          <li>Being tree salesman that managing and selling trees to visitor. About thousands of trees sold in 3 days’ time. Trained to work under pressure as a team</li>
+                          <li>Software Developer providing a Proof of Concept for a web sytem in the company. In charge in developing the basic AI algorithm for the POC.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- date time picker -->
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Set Interview Date & Time</h4>
+                  </div>
+                  <div class="card-body">
 
+                    <div class="form-group">
+                      <label>Please fix the date and time for scholar's interview</label>
+                      <input type="text" class="form-control datetimepicker">
+                    </div>
+
+                  </div>
+                </div>
+                <!-- date time picker end -->
+              </div>
             </div>
+          </div>
+          <div class="text-md-right">
+            <div class="float-lg-left mb-lg-0 mb-3">
+              <button class="btn btn-icon icon-left btn-success" id="swal-2"><i class="fas fa-check"></i> Approve Application</button>
+              <button class="btn btn-icon icon-left btn-danger" id="swal-5"><i class="fas fa-times"></i> Reject Application</button>
+            </div>
+            <button class="btn btn-warning btn-icon icon-left" id="swal-4"><i class="fas fa-print"></i> Print Application</button>
           </div>
         </section>
         <div class="settingSidebar">
@@ -412,7 +508,20 @@
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
+  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
+  <script src="assets/bundles/cleave-js/dist/cleave.min.js"></script>
+  <script src="assets/bundles/cleave-js/dist/addons/cleave-phone.us.js"></script>
+  <script src="assets/bundles/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+  <script src="assets/bundles/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
+  <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="assets/bundles/sweetalert/sweetalert.min.js"></script>
   <!-- Page Specific JS File -->
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+  <script src="assets/js/page/sweetalert.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
@@ -420,5 +529,5 @@
 </body>
 
 
-<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/basic-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:09:58 GMT -->
+<!-- Mirrored from www.radixtouch.in/templates/admin/otika/source/light/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 04:06:38 GMT -->
 </html>

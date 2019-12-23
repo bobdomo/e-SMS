@@ -5,7 +5,7 @@ $("#swal-1").click(function () {
 });
 
 $("#swal-2").click(function () {
-  swal('Good Job', 'You clicked the button!', 'success');
+  swal('Application Approved', 'An email has been delivered to the scholar', 'success');
 });
 
 $("#swal-3").click(function () {
@@ -13,11 +13,11 @@ $("#swal-3").click(function () {
 });
 
 $("#swal-4").click(function () {
-  swal('Good Job', 'You clicked the button!', 'info');
+  swal('Printing Attempt', 'Please check your printer', 'info');
 });
 
 $("#swal-5").click(function () {
-  swal('Good Job', 'You clicked the button!', 'error');
+  swal('Application Rejected', 'An email has been delivered to the scholar', 'error');
 });
 
 $("#swal-6").click(function () {

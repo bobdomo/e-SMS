@@ -6,9 +6,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Otika - Admin Dashboard Template</title>
+  <title>Scholar's Profile</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
   <link rel="stylesheet" href="assets/bundles/bootstrap-social/bootstrap-social.css">
   <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
   <!-- Template CSS -->
@@ -179,207 +181,14 @@
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
             <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
-                class="logo-name">Otika</span>
+                class="logo-name">e-SMS</span>
             </a>
           </div>
           <ul class="sidebar-menu">
-            <li class="menu-header">Main</li>
-            <li class="dropdown">
-              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Widgets</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Chart Widgets</a></li>
-                <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="command"></i><span>Apps</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chat.html">Chat</a></li>
-                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-link" href="blog.html">Blog</a></li>
-                <li><a class="nav-link" href="calendar.html">Calendar</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Email</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="email-inbox.html">Inbox</a></li>
-                <li><a class="nav-link" href="email-compose.html">Compose</a></li>
-                <li><a class="nav-link" href="email-read.html">read</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">UI Elements</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Basic
-                  Components</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="alert.html">Alert</a></li>
-                <li><a class="nav-link" href="badge.html">Badge</a></li>
-                <li><a class="nav-link" href="breadcrumb.html">Breadcrumb</a></li>
-                <li><a class="nav-link" href="buttons.html">Buttons</a></li>
-                <li><a class="nav-link" href="collapse.html">Collapse</a></li>
-                <li><a class="nav-link" href="dropdown.html">Dropdown</a></li>
-                <li><a class="nav-link" href="checkbox-and-radio.html">Checkbox &amp; Radios</a></li>
-                <li><a class="nav-link" href="list-group.html">List Group</a></li>
-                <li><a class="nav-link" href="media-object.html">Media Object</a></li>
-                <li><a class="nav-link" href="navbar.html">Navbar</a></li>
-                <li><a class="nav-link" href="pagination.html">Pagination</a></li>
-                <li><a class="nav-link" href="popover.html">Popover</a></li>
-                <li><a class="nav-link" href="progress.html">Progress</a></li>
-                <li><a class="nav-link" href="tooltip.html">Tooltip</a></li>
-                <li><a class="nav-link" href="flags.html">Flag</a></li>
-                <li><a class="nav-link" href="typography.html">Typography</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="shopping-bag"></i><span>Advanced</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="avatar.html">Avatar</a></li>
-                <li><a class="nav-link" href="card.html">Card</a></li>
-                <li><a class="nav-link" href="modal.html">Modal</a></li>
-                <li><a class="nav-link" href="sweet-alert.html">Sweet Alert</a></li>
-                <li><a class="nav-link" href="toastr.html">Toastr</a></li>
-                <li><a class="nav-link" href="empty-state.html">Empty State</a></li>
-                <li><a class="nav-link" href="multiple-upload.html">Multiple Upload</a></li>
-                <li><a class="nav-link" href="pricing.html">Pricing</a></li>
-                <li><a class="nav-link" href="tabs.html">Tab</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="blank.html"><i data-feather="file"></i><span>Blank Page</span></a></li>
-            <li class="menu-header">Otika</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Forms</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="basic-form.html">Basic Form</a></li>
-                <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
-                <li><a class="nav-link" href="form-wizard.html">Form Wizard</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="grid"></i><span>Tables</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="basic-table.html">Basic Tables</a></li>
-                <li><a class="nav-link" href="advance-table.html">Advanced Table</a></li>
-                <li><a class="nav-link" href="datatables.html">Datatable</a></li>
-                <li><a class="nav-link" href="export-table.html">Export Table</a></li>
-                <li><a class="nav-link" href="editable-table.html">Editable Table</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="pie-chart"></i><span>Charts</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chart-amchart.html">amChart</a></li>
-                <li><a class="nav-link" href="chart-apexchart.html">apexchart</a></li>
-                <li><a class="nav-link" href="chart-echart.html">eChart</a></li>
-                <li><a class="nav-link" href="chart-chartjs.html">Chartjs</a></li>
-                <li><a class="nav-link" href="chart-sparkline.html">Sparkline</a></li>
-                <li><a class="nav-link" href="chart-morris.html">Morris</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="feather"></i><span>Icons</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="icon-font-awesome.html">Font Awesome</a></li>
-                <li><a class="nav-link" href="icon-material.html">Material Design</a></li>
-                <li><a class="nav-link" href="icon-ionicons.html">Ion Icons</a></li>
-                <li><a class="nav-link" href="icon-feather.html">Feather Icons</a></li>
-                <li><a class="nav-link" href="icon-weather-icon.html">Weather Icon</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">Media</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="image"></i><span>Gallery</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="light-gallery.html">Light Gallery</a></li>
-                <li><a href="gallery1.html">Gallery 2</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="flag"></i><span>Sliders</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="carousel.html">Bootstrap Carousel.html</a></li>
-                <li><a class="nav-link" href="owl-carousel.html">Owl Carousel</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="timeline.html"><i data-feather="sliders"></i><span>Timeline</span></a></li>
-            <li class="menu-header">Maps</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="map"></i><span>Google
-                  Maps</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                <li><a href="gmaps-marker.html">Marker</a></li>
-                <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                <li><a href="gmaps-route.html">Route</a></li>
-                <li><a href="gmaps-simple.html">Simple</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="vector-map.html"><i data-feather="map-pin"></i><span>Vector
-                  Map</span></a></li>
-            <li class="menu-header">Pages</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="user-check"></i><span>Auth</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="auth-login.html">Login</a></li>
-                <li><a href="auth-register.html">Register</a></li>
-                <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                <li><a href="auth-reset-password.html">Reset Password</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="alert-triangle"></i><span>Errors</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="errors-503.html">503</a></li>
-                <li><a class="nav-link" href="errors-403.html">403</a></li>
-                <li><a class="nav-link" href="errors-404.html">404</a></li>
-                <li><a class="nav-link" href="errors-500.html">500</a></li>
-              </ul>
-            </li>
+            <li class="menu-header">Main Menu</li>
             <li class="dropdown active">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Other
-                  Pages</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="create-post.html">Create Post</a></li>
-                <li><a class="nav-link" href="posts.html">Posts</a></li>
-                <li class="active"><a class="nav-link" href="profile.html">Profile</a></li>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
-                <li><a class="nav-link" href="invoice.html">Invoice</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="chevrons-down"></i><span>Multilevel</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Menu 1</a></li>
-                <li class="dropdown">
-                  <a href="#" class="has-dropdown">Menu 2</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Child Menu 1</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="has-dropdown">Child Menu 2</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Child Menu 1</a></li>
-                        <li><a href="#">Child Menu 2</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"> Child Menu 3</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <a href="eSMS-staff.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+              <li><a class="nav-link" href="eSMS-scholar-application.html">Application List</a></li>
             </li>
           </ul>
         </aside>
@@ -393,34 +202,30 @@
                 <div class="card author-box">
                   <div class="card-body">
                     <div class="author-box-center">
-                      <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle author-box-picture">
+                      <img alt="image" src="assets/img/users/user-8.png" class="rounded-circle author-box-picture">
                       <div class="clearfix"></div>
                       <div class="author-box-name">
-                        <a href="#">Sarah Smith</a>
+                        <a href="#">Mutaqim Abdul Hamid</a>
                       </div>
-                      <div class="author-box-job">Web Developer</div>
+                      <div class="author-box-job">Software Developer at Innovation Associates Consulting Sdn Bhd</div>
                     </div>
                     <div class="text-center">
                       <div class="author-box-description">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias
-                          minus quod dignissimos.
+                          A committed person looking for a scholarship to ease the journey of learning while contributing to the company to the utmost ability.
                         </p>
                       </div>
                       <div class="mb-2 mt-3">
-                        <div class="text-small font-weight-bold">Follow Hasan On</div>
+                        <div class="text-small font-weight-bold">Mutaqim's Documents</div>
                       </div>
-                      <a href="#" class="btn btn-social-icon mr-1 btn-facebook">
-                        <i class="fab fa-facebook-f"></i>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-facebook" data-toggle="tooltip" data-placement="bottom" title="View documents.">
+                        <i class="fas fa-eye"></i>
                       </a>
-                      <a href="#" class="btn btn-social-icon mr-1 btn-twitter">
-                        <i class="fab fa-twitter"></i>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-instagram" data-toggle="tooltip" data-placement="bottom" title="IC verification result.">
+                        <i class="far fa-id-card"></i>
                       </a>
-                      <a href="#" class="btn btn-social-icon mr-1 btn-github">
-                        <i class="fab fa-github"></i>
-                      </a>
-                      <a href="#" class="btn btn-social-icon mr-1 btn-instagram">
-                        <i class="fab fa-instagram"></i>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-twitter"  data-toggle="tooltip" data-placement="bottom" title="Download all documents.">
+                        <i class="fas fa-file-download"></i>
                       </a>
                       <div class="w-100 d-sm-none"></div>
                     </div>
@@ -434,10 +239,10 @@
                     <div class="py-4">
                       <p class="clearfix">
                         <span class="float-left">
-                          Birthday
+                          IC Number
                         </span>
                         <span class="float-right text-muted">
-                          30-05-1998
+                          961008-06-1221
                         </span>
                       </p>
                       <p class="clearfix">
@@ -445,7 +250,7 @@
                           Phone
                         </span>
                         <span class="float-right text-muted">
-                          (0123)123456789
+                          018-2044058
                         </span>
                       </p>
                       <p class="clearfix">
@@ -453,28 +258,22 @@
                           Mail
                         </span>
                         <span class="float-right text-muted">
-                          test@example.com
+                          mutaqim96@gmail.com
                         </span>
                       </p>
                       <p class="clearfix">
                         <span class="float-left">
-                          Facebook
+                          Current Salary
                         </span>
                         <span class="float-right text-muted">
-                          <a href="#">John Deo</a>
-                        </span>
-                      </p>
-                      <p class="clearfix">
-                        <span class="float-left">
-                          Twitter
-                        </span>
-                        <span class="float-right text-muted">
-                          <a href="#">@johndeo</a>
+                          RM 3,000.00
                         </span>
                       </p>
                     </div>
                   </div>
                 </div>
+
+
                 <div class="card">
                   <div class="card-header">
                     <h4>Skills</h4>
@@ -487,27 +286,37 @@
                         </div>
                         <div class="media-progressbar p-t-10">
                           <div class="progress" data-height="6">
-                            <div class="progress-bar bg-primary" data-width="70%"></div>
+                            <div class="progress-bar bg-green" data-width="70%"></div>
                           </div>
                         </div>
                       </li>
                       <li class="media">
                         <div class="media-body">
-                          <div class="media-title">Web Design</div>
+                          <div class="media-title">C++</div>
                         </div>
                         <div class="media-progressbar p-t-10">
                           <div class="progress" data-height="6">
-                            <div class="progress-bar bg-warning" data-width="80%"></div>
+                            <div class="progress-bar bg-green" data-width="80%"></div>
                           </div>
                         </div>
                       </li>
                       <li class="media">
                         <div class="media-body">
-                          <div class="media-title">Photoshop</div>
+                          <div class="media-title">Web Development</div>
                         </div>
                         <div class="media-progressbar p-t-10">
                           <div class="progress" data-height="6">
                             <div class="progress-bar bg-green" data-width="48%"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-body">
+                          <div class="media-title">Android Studio</div>
+                        </div>
+                        <div class="media-progressbar p-t-10">
+                          <div class="progress" data-height="6">
+                            <div class="progress-bar bg-green" data-width="73%"></div>
                           </div>
                         </div>
                       </li>
@@ -517,152 +326,82 @@
               </div>
               <div class="col-12 col-md-12 col-lg-8">
                 <div class="card">
-                  <div class="padding-20">
-                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#about" role="tab"
-                          aria-selected="true">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#settings" role="tab"
-                          aria-selected="false">Setting</a>
-                      </li>
-                    </ul>
+                    <div class="card-header">
+                      <h4>About</h4>
+                    </div>
                     <div class="tab-content tab-bordered" id="myTab3Content">
                       <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
                         <div class="row">
                           <div class="col-md-3 col-6 b-r">
                             <strong>Full Name</strong>
                             <br>
-                            <p class="text-muted">Emily Smith</p>
+                            <p class="text-muted">Mutaqim bin Abdul Hamid</p>
                           </div>
                           <div class="col-md-3 col-6 b-r">
                             <strong>Mobile</strong>
                             <br>
-                            <p class="text-muted">(123) 456 7890</p>
+                            <p class="text-muted">018-2044058</p>
                           </div>
                           <div class="col-md-3 col-6 b-r">
                             <strong>Email</strong>
                             <br>
-                            <p class="text-muted">johndeo@example.com</p>
+                            <p class="text-muted">mutaqim96@gmail.com</p>
                           </div>
                           <div class="col-md-3 col-6">
                             <strong>Location</strong>
                             <br>
-                            <p class="text-muted">India</p>
+                            <p class="text-muted">Kuantan, Pahang</p>
                           </div>
                         </div>
-                        <p class="m-t-30">Completed my graduation in Arts from the well known and
+                        <p class="m-t-30">Completed my graduation in Computer Science - Artificial Intelligence from the well known and
                           renowned institution
-                          of India – SARDAR PATEL ARTS COLLEGE, BARODA in 2000-01, which was
-                          affiliated
-                          to M.S. University. I ranker in University exams from the same
+                          of Melaka – Universiti Teknikal Malaysia Melaka in 2015-19. I ranked Top Student in University exams
+                          from the same
                           university
-                          from 1996-01.</p>
-                        <p>Worked as Professor and Head of the department at Sarda Collage, Rajkot,
-                          Gujarat
-                          from 2003-2015 </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry. Lorem
-                          Ipsum has been the industry's standard dummy text ever since the 1500s,
-                          when
-                          an unknown printer took a galley of type and scrambled it to make a
-                          type
-                          specimen book. It has survived not only five centuries, but also the
-                          leap
-                          into electronic typesetting, remaining essentially unchanged.</p>
+                          from 2015-19.</p>
+                        <p>Job training as software developer at Arvato Bertelsman System Malaysia. Implementing a php library called sentiment analysis to analyse the feedback form.
+                          from 2014-2015 </p>
+                        <p>Providing a Proof of Concept for a web sytem in the company. In charge in developing the basic AI algorithm for the POC.</p>
                         <div class="section-title">Education</div>
                         <ul>
-                          <li>B.A.,Gujarat University, Ahmedabad,India.</li>
-                          <li>M.A.,Gujarat University, Ahmedabad, India.</li>
-                          <li>P.H.D., Shaurashtra University, Rajkot</li>
+                          <li>SBPI Gombak (Aliran Sains Agama).</li>
+                          <li>Pusat Asasi Sains Universiti Malaya (Foundation in Physics and Computer Science).</li>
+                          <li>Universiti Teknikal Malaysia Melaka, (Bachelor in Computer Science, Major in Artificial Intelligent)</li>
                         </ul>
                         <div class="section-title">Experience</div>
                         <ul>
-                          <li>One year experience as Jr. Professor from April-2009 to march-2010
-                            at B.
-                            J. Arts College, Ahmedabad.</li>
-                          <li>Three year experience as Jr. Professor at V.S. Arts &amp; Commerse
-                            Collage
-                            from April - 2008 to April - 2011.</li>
-                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                          </li>
-                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                          </li>
-                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                          </li>
-                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
+                          <li>Being a general worker that provide materials and manpower for others builders. Train to work fast and perfect. Withstand rough condition.</li>
+                          <li>Being tree salesman that managing and selling trees to visitor. About thousands of trees sold in 3 days’ time. Trained to work under pressure as a team</li>
+                          <li>Software Developer providing a Proof of Concept for a web sytem in the company. In charge in developing the basic AI algorithm for the POC.
                           </li>
                         </ul>
                       </div>
-                      <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="profile-tab2">
-                        <form method="post" class="needs-validation">
-                          <div class="card-header">
-                            <h4>Edit Profile</h4>
-                          </div>
-                          <div class="card-body">
-                            <div class="row">
-                              <div class="form-group col-md-6 col-12">
-                                <label>First Name</label>
-                                <input type="text" class="form-control" value="John">
-                                <div class="invalid-feedback">
-                                  Please fill in the first name
-                                </div>
-                              </div>
-                              <div class="form-group col-md-6 col-12">
-                                <label>Last Name</label>
-                                <input type="text" class="form-control" value="Deo">
-                                <div class="invalid-feedback">
-                                  Please fill in the last name
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="form-group col-md-7 col-12">
-                                <label>Email</label>
-                                <input type="email" class="form-control" value="test@example.com">
-                                <div class="invalid-feedback">
-                                  Please fill in the email
-                                </div>
-                              </div>
-                              <div class="form-group col-md-5 col-12">
-                                <label>Phone</label>
-                                <input type="tel" class="form-control" value="">
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="form-group col-12">
-                                <label>Bio</label>
-                                <textarea
-                                  class="form-control summernote-simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias minus quod dignissimos.</textarea>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="form-group mb-0 col-12">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" name="remember" class="custom-control-input" id="newsletter">
-                                  <label class="custom-control-label" for="newsletter">Subscribe to newsletter</label>
-                                  <div class="text-muted form-text">
-                                    You will get new information about products, offers and promotions
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-footer text-right">
-                            <button class="btn btn-primary">Save Changes</button>
-                          </div>
-                        </form>
-                      </div>
                     </div>
+                </div>
+                <!-- date time picker -->
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Set Interview Date & Time</h4>
+                  </div>
+                  <div class="card-body">
+
+                    <div class="form-group">
+                      <label>Please fix the date and time for scholar's interview</label>
+                      <input type="text" class="form-control datetimepicker">
+                    </div>
+
                   </div>
                 </div>
+                <!-- date time picker end -->
               </div>
             </div>
+          </div>
+          <div class="text-md-right">
+            <div class="float-lg-left mb-lg-0 mb-3">
+              <button class="btn btn-icon icon-left btn-success" id="swal-2"><i class="fas fa-check"></i> Approve Application</button>
+              <button class="btn btn-icon icon-left btn-danger" id="swal-5"><i class="fas fa-times"></i> Reject Application</button>
+            </div>
+            <button class="btn btn-warning btn-icon icon-left" id="swal-4"><i class="fas fa-print"></i> Print Application</button>
           </div>
         </section>
         <div class="settingSidebar">
@@ -770,7 +509,19 @@
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
   <script src="assets/bundles/summernote/summernote-bs4.js"></script>
+  <script src="assets/bundles/cleave-js/dist/cleave.min.js"></script>
+  <script src="assets/bundles/cleave-js/dist/addons/cleave-phone.us.js"></script>
+  <script src="assets/bundles/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+  <script src="assets/bundles/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
+  <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="assets/bundles/sweetalert/sweetalert.min.js"></script>
   <!-- Page Specific JS File -->
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+  <script src="assets/js/page/sweetalert.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
