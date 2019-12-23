@@ -5,28 +5,85 @@
         "name"
       ]
     },
-    "utter_thanks": {
+    "utter_qshortlist": {
       "slots": []
     },
-    "utter_qacca": {
+    "utter_qwhofor": {
       "slots": []
     },
-    "utter_qppas": {
-      "slots": []
-    },
-    "action_joke": {
+    "utter_qaccastillapply": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
+    "utter_qtypesponsr": {
+      "slots": []
+    },
+    "utter_qassessmentforselection": {
+      "slots": []
+    },
+    "utter_qofferedstate": {
+      "slots": []
+    },
+    "utter_qbenefits": {
+      "slots": []
+    },
+    "utter_qduration": {
+      "slots": []
+    },
+    "utter_qcommitcontract": {
+      "slots": []
+    },
+    "utter_qppas": {
+      "slots": []
+    },
+    "utter_qafterapply": {
+      "slots": []
+    },
+    "utter_qcontractbreach": {
+      "slots": []
+    },
+    "utter_qpassnoti": {
+      "slots": []
+    },
+    "utter_qapplytuitionsite": {
+      "slots": []
+    },
+    "utter_thanks": {
+      "slots": []
+    },
+    "utter_qapplyhow": {
+      "slots": []
+    },
+    "utter_qwhichcert": {
+      "slots": []
+    },
+    "utter_qacca": {
+      "slots": []
+    },
     "utter_goodbye": {
+      "slots": []
+    },
+    "action_joke": {
+      "slots": []
+    },
+    "utter_qtuitionprovider": {
       "slots": []
     },
     "utter_qintro": {
       "slots": []
     },
     "utter_name": {
+      "slots": []
+    },
+    "utter_qofferfromtuition": {
+      "slots": []
+    },
+    "utter_qotherloan": {
+      "slots": []
+    },
+    "utter_qtypeaim": {
       "slots": []
     }
   },
@@ -44,7 +101,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20191222-170304",
+  "trained_at": "20191223-103504",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.2",
   "sklearn": "0.20.4"

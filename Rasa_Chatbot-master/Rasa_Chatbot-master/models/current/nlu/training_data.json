@@ -828,6 +828,98 @@
       {
         "intent": "qintro",
         "text": "Can you tell me about Yayasan Peneraju?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "What type of sponsorship covered by this programme?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what does it aim to achieve?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "Who is the programme for?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "Which professional accounting certificatino would I be able to pursue under this programme?"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "What are the benefits of this programme and how is it different from other programmes?"
+      },
+      {
+        "intent": "qduration",
+        "text": "How long is the programme?"
+      },
+      {
+        "intent": "qtypesponsr",
+        "text": "What type of sponsorship covered by this programme?"
+      },
+      {
+        "intent": "qtypesponsr",
+        "text": "What is the difference between Full, Partial and Education?"
+      },
+      {
+        "intent": "qcontractbreach",
+        "text": "What are the consequences I would face if I breach the contract?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "What if I receive another loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "Am I eligible if I receive another loan or scholarship?"
+      },
+      {
+        "intent": "qofferedstate",
+        "text": "Is this programme offered in all states in Malaysia?"
+      },
+      {
+        "intent": "qtuitionprovider",
+        "text": "Which  tuition provider offered for this programme?"
+      },
+      {
+        "intent": "qofferfromtuition",
+        "text": "Do I need to et the offers from tuition provider before applying for this programme?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "How do I apply for this programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "What should I do after applying for this programme?"
+      },
+      {
+        "intent": "qapplytuitionsite",
+        "text": "Am I required to apply in tuition provider's website?"
+      },
+      {
+        "intent": "qaccastillapply",
+        "text": "What if I am currectly taking ACCA? Can I still apply?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "Is there any assessent for the selection?"
+      },
+      {
+        "intent": "qpassnoti",
+        "text": "If I pass the assessment, how will I be notified?"
+      },
+      {
+        "intent": "qbondaft",
+        "text": "Would I be bonded with Yayasan Peneraju after I have finished the pogramme? If so, how many years would the bond be in effect?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "Am I required to commit to any kind of contract/ agreement"
+      },
+      {
+        "intent": "qshortlist",
+        "text": "Would I be able to rehect the offer if I am shortlisted?"
       }
     ],
     "regex_features": [],

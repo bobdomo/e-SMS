@@ -133,8 +133,6 @@
 ## intent:qintro
 - Can you tell me about Yayasan Peneraju?
 
--------------
-
 ## intent:qtypeaim
 - What type of sponsorship covered by this programme?
 - what does it aim to achieve?
