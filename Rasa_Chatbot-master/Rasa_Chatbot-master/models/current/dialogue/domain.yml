@@ -1,0 +1,64 @@
+%YAML 1.1
+---
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_joke
+- utter_qppas
+- utter_qacca
+- utter_qintro
+config:
+  store_entities_as_slots: true
+entities:
+- name
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thanks:
+    use_entities: true
+- deny:
+    use_entities: true
+- joke:
+    use_entities: true
+- name:
+    use_entities: true
+- qppas:
+    use_entities: true
+- qacca:
+    use_entities: true
+- qintro:
+    use_entities: true
+slots:
+  name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_goodbye:
+  - text: Talk to you later!
+  utter_greet:
+  - text: Nice to you meet you {name}. How can I help?
+  utter_name:
+  - text: Hey there! Tell me your name.
+  utter_qacca:
+  - text: ACCA stands for Associatio of Chartered Certified Accountants(ACCA)
+  utter_qintro:
+  - text: 'Yayasan Peneraju, since its inception in 2012, introduced various sponsorship
+      accounting programmes (full time and part time study mode) to suit different
+      entry points ranging from SPM leavers to working professionals. These programmes
+      target to support aspiring professional accountants with highly sought after
+      professional accounting foundation certification (ie. CAT, CFAB) and professional
+      accounting certifications such as ACCA, CPA Australia, ICAEW and MICPA-CAANZ.
+      To date, Yayasan Peneraju has produced more than 50 prize winners in all certifications
+      offered. This has proven the commitment of Yayasan Peneraju towards the vision
+      as catalyst of Bumiputera capacity enhancement and mindset change to become
+      globally competitive community. '
+  utter_qppas:
+  - text: PPAS stands for Peneraju Profesional Akauntan Siswazah
+  utter_thanks:
+  - text: My pleasure.
