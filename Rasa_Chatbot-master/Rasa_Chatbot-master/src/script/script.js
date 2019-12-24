@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 
         $.ajax({
-            url: 'https://c63b605e.ngrok.io/webhooks/rest/webhook',
+            url: 'http://localhost:5005/webhooks/rest/webhook',
             crossOrigin: null, //  RASA API
             type: 'POST',
             crossDomain: true,
