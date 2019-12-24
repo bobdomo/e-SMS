@@ -811,11 +811,31 @@
       },
       {
         "intent": "qppas",
-        "text": "What does PPAS stands for?"
+        "text": "PPAS"
       },
       {
         "intent": "qppas",
-        "text": "What is PPAS?"
+        "text": "what does ppas mean?"
+      },
+      {
+        "intent": "qppas",
+        "text": "do you know anything about ppas?"
+      },
+      {
+        "intent": "qppas",
+        "text": "what does ppas stands for?"
+      },
+      {
+        "intent": "qppas",
+        "text": "i just want to know about ppas"
+      },
+      {
+        "intent": "qppas",
+        "text": "can you give meaning of ppas"
+      },
+      {
+        "intent": "qacca",
+        "text": "ACCA"
       },
       {
         "intent": "qacca",
@@ -826,8 +846,48 @@
         "text": "What is ACCA?"
       },
       {
+        "intent": "qacca",
+        "text": "do you know about ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "can you tell me more on ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "what does ACCA do?"
+      },
+      {
+        "intent": "qacca",
+        "text": "tell me more on ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "any inquiry on ACCA?"
+      },
+      {
         "intent": "qintro",
         "text": "Can you tell me about Yayasan Peneraju?"
+      },
+      {
+        "intent": "qintro",
+        "text": "what yayasan peneraju is all about?"
+      },
+      {
+        "intent": "qintro",
+        "text": "yayasan peneraju background"
+      },
+      {
+        "intent": "qintro",
+        "text": "what do yayasan peneraju do?"
+      },
+      {
+        "intent": "qintro",
+        "text": "tell me more on yayasan peneraju"
+      },
+      {
+        "intent": "qintro",
+        "text": "yayasan peneraju info"
       },
       {
         "intent": "qtypeaim",
@@ -838,20 +898,84 @@
         "text": "what does it aim to achieve?"
       },
       {
+        "intent": "qtypeaim",
+        "text": "what does yayasan peneraju aim to achieve?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what is your aim?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what do you want to do?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what is yayasan peneraju mission?"
+      },
+      {
         "intent": "qwhofor",
         "text": "Who is the programme for?"
       },
       {
+        "intent": "qwhofor",
+        "text": "who are entitled to apply?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "who is able to apply?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "who can apply?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "to whom is the program offered?"
+      },
+      {
         "intent": "qwhichcert",
-        "text": "Which professional accounting certificatino would I be able to pursue under this programme?"
+        "text": "Which professional accounting certification would I be able to pursue under this programme?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "which cert can i apply?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "which accounting certification can i apply?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "i am an accountant and how do i apply for certification?"
       },
       {
         "intent": "qbenefits",
         "text": "What are the benefits of this programme and how is it different from other programmes?"
       },
       {
+        "intent": "qbenefits",
+        "text": "benefit this program gives"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "how the program differ from others?"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "difference between other program"
+      },
+      {
         "intent": "qduration",
         "text": "How long is the programme?"
+      },
+      {
+        "intent": "qduration",
+        "text": "is it long to enroll in the program?"
+      },
+      {
+        "intent": "qduration",
+        "text": "duration of the program?"
       },
       {
         "intent": "qtypesponsr",
@@ -862,8 +986,20 @@
         "text": "What is the difference between Full, Partial and Education?"
       },
       {
+        "intent": "qtypesponsr",
+        "text": "difference between all type of sponsor"
+      },
+      {
         "intent": "qcontractbreach",
         "text": "What are the consequences I would face if I breach the contract?"
+      },
+      {
+        "intent": "qcontractbreach",
+        "text": "what if i breach the contact?"
+      },
+      {
+        "intent": "qcontractbreach",
+        "text": "what happen if i breach contract?"
       },
       {
         "intent": "qotherloan",
@@ -874,52 +1010,180 @@
         "text": "Am I eligible if I receive another loan or scholarship?"
       },
       {
+        "intent": "qotherloan",
+        "text": "is it possible to have multiple loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "am i entitled to apply if i had apply loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "can i apply another loan if i had applied?"
+      },
+      {
         "intent": "qofferedstate",
         "text": "Is this programme offered in all states in Malaysia?"
       },
       {
+        "intent": "qofferedstate",
+        "text": "is it offered accross all states?"
+      },
+      {
+        "intent": "qofferedstate",
+        "text": "which state does the programme covered?"
+      },
+      {
         "intent": "qtuitionprovider",
-        "text": "Which  tuition provider offered for this programme?"
+        "text": "Which tuition provider offered for this programme?"
+      },
+      {
+        "intent": "qtuitionprovider",
+        "text": "tuition provider involved in the programme?"
+      },
+      {
+        "intent": "qtuitionprovider",
+        "text": "tuition provider for the programme"
       },
       {
         "intent": "qofferfromtuition",
-        "text": "Do I need to et the offers from tuition provider before applying for this programme?"
+        "text": "Do I need to get the offers from tuition provider before applying for this programme?"
+      },
+      {
+        "intent": "qofferfromtuition",
+        "text": "does offer from tuition provider required?"
+      },
+      {
+        "intent": "qofferfromtuition",
+        "text": "do i need offer letter from the provider to apply?"
       },
       {
         "intent": "qapplyhow",
         "text": "How do I apply for this programme?"
       },
       {
+        "intent": "qapplyhow",
+        "text": "how to apply?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "where to apply?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "steps to appy the programme?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "application form?"
+      },
+      {
         "intent": "qafterapply",
         "text": "What should I do after applying for this programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "what happen after applying to the programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "next step after applying the programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "what's next after applying?"
       },
       {
         "intent": "qapplytuitionsite",
         "text": "Am I required to apply in tuition provider's website?"
       },
       {
+        "intent": "qapplytuitionsite",
+        "text": "should i apply in provider website?"
+      },
+      {
+        "intent": "qapplytuitionsite",
+        "text": "can i apply in provider website?"
+      },
+      {
         "intent": "qaccastillapply",
         "text": "What if I am currectly taking ACCA? Can I still apply?"
       },
       {
+        "intent": "qaccastillapply",
+        "text": "am i qualified to apply if im already taking acca?"
+      },
+      {
         "intent": "qassessmentforselection",
-        "text": "Is there any assessent for the selection?"
+        "text": "Is there any assessment for the selection?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "do i need to attend for examination?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "is there any assessment after selection?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "what do i need to do after i have selected"
       },
       {
         "intent": "qpassnoti",
         "text": "If I pass the assessment, how will I be notified?"
       },
       {
+        "intent": "qpassnoti",
+        "text": "how can i know if i pass the assessment?"
+      },
+      {
+        "intent": "qpassnoti",
+        "text": "is there any follow up after the assessment?"
+      },
+      {
         "intent": "qbondaft",
-        "text": "Would I be bonded with Yayasan Peneraju after I have finished the pogramme? If so, how many years would the bond be in effect?"
+        "text": "Would I be bonded with Yayasan Peneraju after I have finished the programme? If so, how many years would the bond be in effect?"
+      },
+      {
+        "intent": "qbondaft",
+        "text": "how long i would be bonded after the programme?"
+      },
+      {
+        "intent": "qbondaft",
+        "text": "am i need to be bonded after the programme?"
       },
       {
         "intent": "qcommitcontract",
         "text": "Am I required to commit to any kind of contract/ agreement"
       },
       {
+        "intent": "qcommitcontract",
+        "text": "is there any contract or agreement?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "am i bonded to any contract?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "is there ny agreement to be comply?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "do i need to commit to any contract?"
+      },
+      {
         "intent": "qshortlist",
-        "text": "Would I be able to rehect the offer if I am shortlisted?"
+        "text": "Would I be able to reject the offer if I am shortlisted?"
+      },
+      {
+        "intent": "qshortlist",
+        "text": "can i reject the offer?"
+      },
+      {
+        "intent": "qshortlist",
+        "text": "am i able to reject even after i am shorlisted?"
       }
     ],
     "regex_features": [],
