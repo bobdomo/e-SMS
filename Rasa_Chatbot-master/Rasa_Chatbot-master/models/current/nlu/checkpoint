@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\wamp64\\www\\e-SMS\\Rasa_Chatbot-master\\Rasa_Chatbot-master\\models\\current\\nlu\\component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "C:\\wamp64\\www\\e-SMS\\Rasa_Chatbot-master\\Rasa_Chatbot-master\\models\\current\\nlu\\component_5_EmbeddingIntentClassifier.ckpt"
