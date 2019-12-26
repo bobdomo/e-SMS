@@ -1,0 +1,199 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- name
+- qppas
+- qacca
+- qintro
+- qtypeaim
+- qwhofor
+- qwhichcert
+- qbenefits
+- qduration
+- qtypesponsr
+- qcontractbreach
+- qotherloan
+- qofferedstate
+- qtuitionprovider
+- qofferfromtuition
+- qapplyhow
+- qafterapply
+- qapplytuitionsite
+- qaccastillapply
+- qassessmentforselection
+- qpassnoti
+- qbondaft
+- qcommitcontract
+- qshortlist
+
+
+entities:
+- name
+
+
+slots:
+  name:
+    type: text
+
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_joke
+- utter_qppas
+- utter_qacca
+- utter_qintro
+- utter_qtypeaim
+- utter_qwhofor
+- utter_qwhichcert
+- utter_qbenefits
+- utter_qduration
+- utter_qtypesponsr
+- utter_qcontractbreach
+- utter_qotherloan
+- utter_qofferedstate
+- utter_qtuitionprovider
+- utter_qofferfromtuition
+- utter_qapplyhow
+- utter_qafterapply
+- utter_qapplytuitionsite
+- utter_qaccastillapply
+- utter_qassessmentforselection
+- utter_qpassnoti
+- utter_qbondaft
+- utter_qcommitcontract
+- utter_qshortlist
+
+
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_qppas:
+    - text: "PPAS stands for Peneraju Profesional Akauntan Siswazah"
+
+  utter_qacca:
+    - text: "ACCA stands for Associatio of Chartered Certified Accountants(ACCA)"
+
+  utter_qintro:
+    - text: "Yayasan Peneraju, since its inception in 2012, introduced various sponsorship accounting programmes
+(full time and part time study mode) to suit different entry points ranging from SPM leavers to working
+professionals. These programmes target to support aspiring professional accountants with highly sought
+after professional accounting foundation certification (ie. CAT, CFAB) and professional accounting
+certifications such as ACCA, CPA Australia, ICAEW and MICPA-CAANZ. To date, Yayasan Peneraju has
+produced more than 50 prize winners in all certifications offered. This has proven the commitment of
+Yayasan Peneraju towards the vision as catalyst of Bumiputera capacity enhancement and mindset
+change to become globally competitive community."
+
+  utter_qtypeaim:
+    - text: "This programme aims to increase the number of certified professional accountant via the
+fastest route to a career in accountancy. The sponsorship will provide opportunity to young
+and motivated candidates to start their journey in professional accounting certification after
+their tertiary studies."
+
+  utter_qwhofor:
+    - text: "This programme is targeted at Bumiputera with Degree in Accounting or / relevant
+certification holders who are interested in furthering studies to obtain a professional
+accounting certification. The entry requirements are as below:
+ Malaysian citizen & Bumiputera
+ 25 years old and below
+ Accredited Bachelor Degree in Accounting / relevant certification with a minimum
+CGPA of 3.00 and with exemption of nine (9) papers from AC"
+
+  utter_qwhichcert:
+    - text: "This programme gives you the opportunity to obtain professional accounting certificate of
+Association of Chartered Certified Accountants (ACCA)."
+
+  utter_qbenefits:
+    - text: "This programme gives scholars the opportunity to obtain an internationally recognized
+professional accounting certification (ACCA) immediately at leading education institutions in
+Malaysia. Additionally, scholars will also undergo a Nurture and Develop Programme (NDP)
+design to improve the soft skills of each scholars to be well- equipped before embarking on a
+career."
+
+  utter_qduration:
+    - text: "Scholars will need to complete all certification papers (ACCA) within 2 years on a
+full- time study basis."
+
+  utter_qtypesponsr:
+    - text: "1.1 Full Sponsorship
+Graduate scholars are eligible for full sponsorship as subject to terms and condition stated in
+Section 1 of Table 1.
+1.2 Partial Sponsorship
+Graduate scholars are eligible for partial sponsorship as subject to terms and condition stated in
+Section 2 of Table 1.
+1.3 Education Financing
+It will be convert to Education Financing as subject to terms and conditions stated in Section 3 of
+Table 1.
+*Yayasan Peneraju has the right to change any policies that have been declared. "
+
+  utter_qcontractbreach:
+    - text: "Scholars who withdraw or who are terminated from the programme are required to pay all costs
+incurred on behalf of the scholar to Yayasan Peneraju. The amount will be calculated by Yayasan
+Peneraju up to the point of termination."
+
+  utter_qotherloan:
+    - text: "No. Only one sponsorship is allowed at one time."
+
+  utter_qofferedstate:
+    - text: "Currently, no. It is dependent on the tuition provider’s locality. At this point, this programme
+is offered in Klang Valley and Selangor only."
+
+  utter_qtuitionprovider:
+    - text: "You may select your preferred tuition provider when applying for this programme"
+
+  utter_qofferfromtuition:
+    - text: "No. Yayasan Penerajuwillmanage the enrolment ofsuccessful candidates with yourselected tuition
+provider."
+
+  utter_qapplyhow:
+    - text: "You can apply through Yayasan Peneraju’s website (www.yayasanpeneraju.com.my) when the
+application opens."
+
+  utter_qafterapply:
+    - text: "You will be contacted by Yayasan Peneraju’s Program Partner to submit the documents. Only
+candidates that meet the requirements and complete the documents will be informed by
+Program Partner to attend the interview and assessment sessions"
+
+  utter_qapplytuitionsite:
+    - text: "No. The application is only using Yayasan Peneraju’s website."
+
+  utter_qaccastillapply:
+    - text: "No. We only accept applications from applicants who have not started any certification papers"
+
+  utter_qassessmentforselection:
+    - text: "A technical test and interview session will be part of the assessment process to select qualified
+Bumiputera candidates who meet the application requirements for the programme."
+
+  utter_qpassnoti:
+    - text: "Those who pass the assessment will be notified in the form of email and/or phone call by the
+tuition provider. All communication will primarily be via email."
+
+  utter_qbondaft:
+    - text: "Scholars who have completed the programme will not be bonded by Yayasan Peneraju.
+However, scholars are required to work in Malaysia, or if outside of Malaysia, scholars are
+required to work with a Malaysian based company (terms and conditions apply) as stated at
+Table 2."
+
+  utter_qcommitcontract:
+    - text: "Yes. An official offer will be made and scholars are required to enter into a Sponsorship
+Agreement with Yayasan Peneraju."
+
+  utter_qshortlist:
+    - text: "Yes. The agreement is only bonded after it has been signed and delivered to Yayasan
+Peneraju."
