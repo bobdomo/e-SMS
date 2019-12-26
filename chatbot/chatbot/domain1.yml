@@ -1,0 +1,62 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- name
+- ask_contact
+- ask_application
+
+
+entities:
+- name
+- pekeliling_15
+
+
+slots:
+  name:
+    type: text
+
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_joke
+- utter_give_contacts
+- utter_application
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_give_contacts:
+  - text: "Urus Setia Jawatankuasa Teknikal ICT Sektor Awam (JTISA),
+          Unit Pemodenan Tadbiran dan Perancangan Pengurusan Malaysia(MAMPU),
+          Jabatan Perdana Menteri
+          Aras 6, Blok B2
+          Kompleks Jabatan Perdana Menteri
+          Pusat Pentadbiran Kerajaan Persekutuan
+          62502 Putrajaya
+
+          Phone No : 03 - 8000 8000
+          Fax No : 03 - 8000 8001
+          Email : urussetiajtisa@mampu.gov.my "
+
+  utter_give_application:
+  - text: "jabatan urusan anak ayam ikan, kambing, lembun dan segalanya"
+
+# TEST
+ utter_location
+  - text: "The office is located at bangsar"

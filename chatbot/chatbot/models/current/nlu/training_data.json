@@ -1,0 +1,1193 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "goodbye",
+        "text": "Bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "goodbye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "goodbye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi folks"
+      },
+      {
+        "intent": "greet",
+        "text": "hi Mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hello everybody"
+      },
+      {
+        "intent": "greet",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello robot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "thanks",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "thanks",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thanks",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "Juste",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Juste"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Josh",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Josh"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Lucy",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Lucy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Greg",
+            "entity": "name"
+          }
+        ],
+        "text": "People call me Greg"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "David",
+            "entity": "name"
+          }
+        ],
+        "text": "It's David"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "Amy",
+            "entity": "name"
+          }
+        ],
+        "text": "Usually people call me Amy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "John",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is John"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "Sam",
+            "entity": "name"
+          }
+        ],
+        "text": "You can call me Sam"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Linda",
+            "entity": "name"
+          }
+        ],
+        "text": "Please call me Linda"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "Tom",
+            "entity": "name"
+          }
+        ],
+        "text": "Name name is Tom"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Richard",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Richard"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "Tracy",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Tracy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Sally",
+            "entity": "name"
+          }
+        ],
+        "text": "Call me Sally"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Philipp",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Philipp"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Charlie",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Charlie"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Charlie",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Charlie"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "Ben",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Ben"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Susan",
+            "entity": "name"
+          }
+        ],
+        "text": "Call me Susan"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Lucy",
+            "entity": "name"
+          }
+        ],
+        "text": "Lucy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Peter",
+            "entity": "name"
+          }
+        ],
+        "text": "Peter"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Mark",
+            "entity": "name"
+          }
+        ],
+        "text": "Mark"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Joseph",
+            "entity": "name"
+          }
+        ],
+        "text": "Joseph"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Tan",
+            "entity": "name"
+          }
+        ],
+        "text": "Tan"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Pete",
+            "entity": "name"
+          }
+        ],
+        "text": "Pete"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Elon",
+            "entity": "name"
+          }
+        ],
+        "text": "Elon"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Penny",
+            "entity": "name"
+          }
+        ],
+        "text": "Penny"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "Andrew",
+            "entity": "name"
+          }
+        ],
+        "text": "name is Andrew"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "Lora",
+            "entity": "name"
+          }
+        ],
+        "text": "I Lora"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Stan",
+            "entity": "name"
+          }
+        ],
+        "text": "Stan is my name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Susan",
+            "entity": "name"
+          }
+        ],
+        "text": "Susan is the name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Ross",
+            "entity": "name"
+          }
+        ],
+        "text": "Ross is my first name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Bing",
+            "entity": "name"
+          }
+        ],
+        "text": "Bing is my last name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Angelina",
+            "entity": "name"
+          }
+        ],
+        "text": "Few call me as Angelina"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "Julia",
+            "entity": "name"
+          }
+        ],
+        "text": "Some call me Julia"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "Laura",
+            "entity": "name"
+          }
+        ],
+        "text": "Everyone calls me Laura"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Ganesh",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Ganesh"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Mike",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Mike"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "Monika",
+            "entity": "name"
+          }
+        ],
+        "text": "just call me Monika"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "Dan",
+            "entity": "name"
+          }
+        ],
+        "text": "Few call Dan"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "Suraj",
+            "entity": "name"
+          }
+        ],
+        "text": "You can always call me Suraj"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "Andrew",
+            "entity": "name"
+          }
+        ],
+        "text": "Some will call me Andrew"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Ajay",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Ajay"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "Ding",
+            "entity": "name"
+          }
+        ],
+        "text": "I call Ding"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Partia",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Partia"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "Leo",
+            "entity": "name"
+          }
+        ],
+        "text": "Please call me Leo"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "Pari",
+            "entity": "name"
+          }
+        ],
+        "text": "name is Pari"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Sanjay",
+            "entity": "name"
+          }
+        ],
+        "text": "name Sanjay"
+      },
+      {
+        "intent": "joke",
+        "text": "Can you tell me a joke?"
+      },
+      {
+        "intent": "joke",
+        "text": "I would like to hear a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "Tell me a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "A joke please"
+      },
+      {
+        "intent": "joke",
+        "text": "Tell me a joke please"
+      },
+      {
+        "intent": "joke",
+        "text": "I would like to hear a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "I would loke to hear a joke, please"
+      },
+      {
+        "intent": "joke",
+        "text": "Can you tell jokes?"
+      },
+      {
+        "intent": "joke",
+        "text": "Please tell me a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "I need to hear a joke"
+      },
+      {
+        "intent": "qppas",
+        "text": "PPAS"
+      },
+      {
+        "intent": "qppas",
+        "text": "what does ppas mean?"
+      },
+      {
+        "intent": "qppas",
+        "text": "do you know anything about ppas?"
+      },
+      {
+        "intent": "qppas",
+        "text": "what does ppas stands for?"
+      },
+      {
+        "intent": "qppas",
+        "text": "i just want to know about ppas"
+      },
+      {
+        "intent": "qppas",
+        "text": "can you give meaning of ppas"
+      },
+      {
+        "intent": "qacca",
+        "text": "ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "What does ACCA stands for?"
+      },
+      {
+        "intent": "qacca",
+        "text": "What is ACCA?"
+      },
+      {
+        "intent": "qacca",
+        "text": "do you know about ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "can you tell me more on ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "what does ACCA do?"
+      },
+      {
+        "intent": "qacca",
+        "text": "tell me more on ACCA"
+      },
+      {
+        "intent": "qacca",
+        "text": "any inquiry on ACCA?"
+      },
+      {
+        "intent": "qintro",
+        "text": "Can you tell me about Yayasan Peneraju?"
+      },
+      {
+        "intent": "qintro",
+        "text": "what yayasan peneraju is all about?"
+      },
+      {
+        "intent": "qintro",
+        "text": "yayasan peneraju background"
+      },
+      {
+        "intent": "qintro",
+        "text": "what do yayasan peneraju do?"
+      },
+      {
+        "intent": "qintro",
+        "text": "tell me more on yayasan peneraju"
+      },
+      {
+        "intent": "qintro",
+        "text": "yayasan peneraju info"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "What type of sponsorship covered by this programme?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what does it aim to achieve?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what does yayasan peneraju aim to achieve?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what is your aim?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what do you want to do?"
+      },
+      {
+        "intent": "qtypeaim",
+        "text": "what is yayasan peneraju mission?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "Who is the programme for?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "who are entitled to apply?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "who is able to apply?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "who can apply?"
+      },
+      {
+        "intent": "qwhofor",
+        "text": "to whom is the program offered?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "Which professional accounting certification would I be able to pursue under this programme?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "which cert can i apply?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "which accounting certification can i apply?"
+      },
+      {
+        "intent": "qwhichcert",
+        "text": "i am an accountant and how do i apply for certification?"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "What are the benefits of this programme and how is it different from other programmes?"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "benefit this program gives"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "how the program differ from others?"
+      },
+      {
+        "intent": "qbenefits",
+        "text": "difference between other program"
+      },
+      {
+        "intent": "qduration",
+        "text": "How long is the programme?"
+      },
+      {
+        "intent": "qduration",
+        "text": "is it long to enroll in the program?"
+      },
+      {
+        "intent": "qduration",
+        "text": "duration of the program?"
+      },
+      {
+        "intent": "qtypesponsr",
+        "text": "What type of sponsorship covered by this programme?"
+      },
+      {
+        "intent": "qtypesponsr",
+        "text": "What is the difference between Full, Partial and Education?"
+      },
+      {
+        "intent": "qtypesponsr",
+        "text": "difference between all type of sponsor"
+      },
+      {
+        "intent": "qcontractbreach",
+        "text": "What are the consequences I would face if I breach the contract?"
+      },
+      {
+        "intent": "qcontractbreach",
+        "text": "what if i breach the contact?"
+      },
+      {
+        "intent": "qcontractbreach",
+        "text": "what happen if i breach contract?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "What if I receive another loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "Am I eligible if I receive another loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "is it possible to have multiple loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "am i entitled to apply if i had apply loan or scholarship?"
+      },
+      {
+        "intent": "qotherloan",
+        "text": "can i apply another loan if i had applied?"
+      },
+      {
+        "intent": "qofferedstate",
+        "text": "Is this programme offered in all states in Malaysia?"
+      },
+      {
+        "intent": "qofferedstate",
+        "text": "is it offered accross all states?"
+      },
+      {
+        "intent": "qofferedstate",
+        "text": "which state does the programme covered?"
+      },
+      {
+        "intent": "qtuitionprovider",
+        "text": "Which tuition provider offered for this programme?"
+      },
+      {
+        "intent": "qtuitionprovider",
+        "text": "tuition provider involved in the programme?"
+      },
+      {
+        "intent": "qtuitionprovider",
+        "text": "tuition provider for the programme"
+      },
+      {
+        "intent": "qofferfromtuition",
+        "text": "Do I need to get the offers from tuition provider before applying for this programme?"
+      },
+      {
+        "intent": "qofferfromtuition",
+        "text": "does offer from tuition provider required?"
+      },
+      {
+        "intent": "qofferfromtuition",
+        "text": "do i need offer letter from the provider to apply?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "How do I apply for this programme?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "how to apply?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "where to apply?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "steps to appy the programme?"
+      },
+      {
+        "intent": "qapplyhow",
+        "text": "application form?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "What should I do after applying for this programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "what happen after applying to the programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "next step after applying the programme?"
+      },
+      {
+        "intent": "qafterapply",
+        "text": "what's next after applying?"
+      },
+      {
+        "intent": "qapplytuitionsite",
+        "text": "Am I required to apply in tuition provider's website?"
+      },
+      {
+        "intent": "qapplytuitionsite",
+        "text": "should i apply in provider website?"
+      },
+      {
+        "intent": "qapplytuitionsite",
+        "text": "can i apply in provider website?"
+      },
+      {
+        "intent": "qaccastillapply",
+        "text": "What if I am currectly taking ACCA? Can I still apply?"
+      },
+      {
+        "intent": "qaccastillapply",
+        "text": "am i qualified to apply if im already taking acca?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "Is there any assessment for the selection?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "do i need to attend for examination?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "is there any assessment after selection?"
+      },
+      {
+        "intent": "qassessmentforselection",
+        "text": "what do i need to do after i have selected"
+      },
+      {
+        "intent": "qpassnoti",
+        "text": "If I pass the assessment, how will I be notified?"
+      },
+      {
+        "intent": "qpassnoti",
+        "text": "how can i know if i pass the assessment?"
+      },
+      {
+        "intent": "qpassnoti",
+        "text": "is there any follow up after the assessment?"
+      },
+      {
+        "intent": "qbondaft",
+        "text": "Would I be bonded with Yayasan Peneraju after I have finished the programme? If so, how many years would the bond be in effect?"
+      },
+      {
+        "intent": "qbondaft",
+        "text": "how long i would be bonded after the programme?"
+      },
+      {
+        "intent": "qbondaft",
+        "text": "am i need to be bonded after the programme?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "Am I required to commit to any kind of contract/ agreement"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "is there any contract or agreement?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "am i bonded to any contract?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "is there ny agreement to be comply?"
+      },
+      {
+        "intent": "qcommitcontract",
+        "text": "do i need to commit to any contract?"
+      },
+      {
+        "intent": "qshortlist",
+        "text": "Would I be able to reject the offer if I am shortlisted?"
+      },
+      {
+        "intent": "qshortlist",
+        "text": "can i reject the offer?"
+      },
+      {
+        "intent": "qshortlist",
+        "text": "am i able to reject even after i am shorlisted?"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
